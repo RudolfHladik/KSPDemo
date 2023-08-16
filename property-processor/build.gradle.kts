@@ -6,7 +6,7 @@ plugins {
 
 @OptIn(org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi::class)
 kotlin {
-//    targetHierarchy.default()
+    targetHierarchy.default()
 
     jvm()
 
@@ -18,7 +18,6 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 implementation(project(":long-property-annotation"))
-//                implementation("com.google.devtools.ksp:symbol-processing-cmdline:1.9.0-1.0.12") // todo try add processor to commonMain
 
             }
         }

@@ -17,14 +17,4 @@ allprojects {
             jvmTarget = JavaVersion.VERSION_1_8.toString()
         }
     }
-//    tasks.withType<org.jetbrains.kotlin.gradle.dsl.KotlinCompile<*>>().all {
-//        if (name.startsWith("compileKotlinIos")) { // the remaining suffix is the target eg simulator, arm64, etc
-//            dependsOn("kspCommonMainKotlinMetadata")
-//        }
-//    }
-//    tasks.withType<org.jetbrains.kotlin.gradle.dsl.KotlinCompile<*>>().all {
-//        if(name != "kspCommonMainKotlinMetadata") {
-//            dependsOn("kspCommonMainKotlinMetadata")
-//        }
-//    }
 }

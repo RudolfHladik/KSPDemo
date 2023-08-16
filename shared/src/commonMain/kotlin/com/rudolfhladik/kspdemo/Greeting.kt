@@ -6,10 +6,10 @@ class Greeting {
     private val platform: Platform = getPlatform()
 
     @LongCopyAnnotation
-    val number2: Int = 2
+    private val number: Int = 2
 
     fun greet(): String {
 
-        return "Hello, ${platform.name} $number2!"
+        return "Hello, ${platform.name} $number! ${Foo.generated}"
     }
 }
