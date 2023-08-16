@@ -55,8 +55,9 @@ dependencies {
 //    add("kspIosX64", project(":property-processor"))
 //    add("kspIosArm64", project(":property-processor"))
 //    add("kspIosSimulatorArm64", project(":property-processor"))
-    // The universal "ksp" configuration has performance issue and is deprecated on multiplatform since 1.0.1
-    // ksp(project(":test-processor"))
+
+//     The universal "ksp" configuration has performance issue and is deprecated on multiplatform since 1.0.1
+//     ksp(project(":test-processor"))
 }
 
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().all {
